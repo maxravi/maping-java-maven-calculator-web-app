@@ -25,6 +25,7 @@ public class CalculatorServiceIT {
 
     @Test
     public void testAdd() throws Exception {
+    	//test comment
         CloseableHttpClient httpclient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet("http://localhost:9999/calculator/api/calculator/add?x=8&y=26");
         HttpResponse response = httpclient.execute(httpGet);
